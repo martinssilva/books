@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.header h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.header h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+.about, .books {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about h2, .books h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.book-card {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.book-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.synopsis {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+.amazon-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.amazon-link:hover {
+    background-color: #e68a00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-cover {
+        width: 100px;
+        height: 150px;
+    }
+
+    .book-details {
+        align-items: center;
+    }
+}
+
